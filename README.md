@@ -262,4 +262,27 @@ most useful contribution.
 
 ## License
 
-TBD (MIT suggested).
+MIT license.
+
+## AI assistance
+
+This project was built with AI assistance, and that should be easy to find.
+
+- **Model:** Claude Sonnet 5.5 (Anthropic, `claude-sonnet-5-5`), used in
+  claude.ai chat, October 2026.
+- **What Claude did:** wrote the Python (`sbsprobe.py`), the simulator tests,
+  the README and `docs/FIELD_NOTES.md`; researched TI datasheets, forum threads
+  and related projects with web search; and helped interpret the captures.
+- **What FalconFour did:** all of the hardware work (wiring, powering and
+  opening the packs, running every command on a Raspberry Pi 3 B+), supplied
+  every capture in `tests/fixtures`, and made the design decisions.
+- **Mistakes happened and are documented.** Examples: block registers misread
+  as plain values, a wrong decode of register `0x2F`, and an overreaching claim
+  about the charge percentage. Real captures caught them. In the field notes,
+  trust each claim only as far as its tag: **[observed]**, **[inferred]** or
+  **[documented]**.
+- **Review status:** the commands have been run on two real packs, but
+  AI-written code can still contain bugs. Read `dfwrite` before pointing it at a
+  pack you care about.
+
+If you reuse or quote parts of this repository, please keep this note with it.
