@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# AI-assisted: written by Claude Sonnet 5.5 (Anthropic) under human direction,
+# and tested on real hardware by FalconFour. See "AI assistance" in README.md.
 """
 sbsprobe - explore, identify and (carefully) edit laptop "smart batteries"
 over SMBus from a Raspberry Pi (or anything with Linux i2c-dev + smbus2).
